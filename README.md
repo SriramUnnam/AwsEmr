@@ -7,7 +7,7 @@ The AWS Command Line Interface (CLI) is a unified tool to manage your AWS servic
 ## boto3
 Boto3 is the name of the Python SDK for AWS. It allows you to directly create, update, and delete AWS resources from your Python scripts.
 
-## Installation
+## boto3 Installation
 Use the package manager [pip] to install boto3
 ```bash
 pip install boto3
@@ -22,4 +22,11 @@ s3_client = boto3.resource('s3')
 BUCKET = "EXISTING_S3_BUCKET"
 
 s3_client.Bucket(BUCKET).upload_file("FULLPATH/to/sample.json", "sampl.json")
+```
+
+## Summary
+Run the python script emr_script_final.py in your local system as follows.
+
+```powershell
+python emr_script_final.py
 ```
