@@ -18,3 +18,8 @@ pip install boto3
 ```python
 import boto3
 
+s3_client = boto3.resource('s3')
+BUCKET = "EXISTING_S3_BUCKET"
+
+s3_client.Bucket(BUCKET).upload_file("FULLPATH/to/sample.json", "sampl.json")
+```
